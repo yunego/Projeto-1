@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+	<head>
+		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1.0">
+		<title>My life</title>
+	<meta name="description" content="Site foda">
+	<meta name="keywords" content="HTML, CSS, JavaScript,Senai">
+	<meta name="author" content="Youssef Benitez">
+	<meta name="viewport" content="width=device-width, initialscale=2.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="icon" href="negao.jpg" type="image/jpg" sizes="16x16">  
+	</head>
+	<body>
+		<button>Mudar a cor do fundo</button>
+		<script>
+			var btn = document.querySelector('button');
+		
+			function random(number){
+				return Math.floor(Math.random()*(number+1));
+			}
+		
+			btn.onclick = function (){
+			var rndCol = 'rgb('+ random(255)+','+random(255)+','+random(255)+')';
+				document.body.style.backgroundColor = rndCol;
+			}
+		</script>
+			 <form action="javascript:void(0);">
+				<label>Escolha seu sexo</label>
+				<input type="radio" name="sexo" id="feminino"><label>Feminino</label>
+				<input type="radio" name="sexo" id="masculino"><label>Masculino</label>
+				<input type="submit" id="button">
+			  </form>
+			<header>
+			<div class="texto-centralizado">
+			<h1>Bem-vindo ao site do Youssef</h1>
+			</div>
+			<nav> <id="menu">
+				
+				<div class="container-fluid d-flex justify-content-right">
+					<button type="button" class="btn btn-outline-dark rounded-pill"><a href="index.html">HOME</a></button>	
+					<button type="button" class="btn btn-dark rounded-pill"><a href="hardware.html">AMOR</a></button>
+					<button type="button" class="btn btn-dark rounded-pill"><a href="celulares/cel_acessorios.html">HOBBIES</a></button>
+			</div>
+			</nav>
+			<hr style="width:100%;height:3px;background-color:purple">
+		<footer>
+			<form>
+			<div style="float:right">
+			<label for="name"><b>Nome</b></label>
+			<input type="text" id="name">
+			<label for="date-example"><b>Data da Visita ao site</b></label>
+			<input type="date" id="date-example">
+			<br><br>
+		<footer>
+			<div class="texto-centralizado">
+			<div style="float:none">
+			<input type="submit" id="btn-enviar" name="btn-enviar" required>
+			</div>
+		</footer>
+			</form>
+		</footer>
+		<h1>Home<h1>
+			</header>
+		<section>
+			<h2>Resumo</h2>
+			<p> Aqui, veremos meu primeiro site como um aluno da programação, personalizei ele do meu jeito.</p>
+			<article>
+				<h2>informações do site</h2>
+				<p> ainda esta no comeco mais pretendo melhorar futuramente de acordo com meus estudos</p>
+			</article>
+		</section>
+		<hr style="width:100%;height:3px;background-color:purple">
+		<h2>Listas de cantores favoritos</h1>
+		<ul class="vermelho">
+			<li> Tyler, the creator
+			<li> Travis scott
+			<li> 2pac
+			<li> Livinho
+			<li> abbot
+			<li> 50cent
+		</ul>
+		<hr style="width:100%;height:3px;background-color:purple">
+		<h2> Musicas favoritas </h2>
+		<h3>21 Savage</h3> <p><u>REDRUM</u></p>
+		<video width="500" height="300" controls >
+				<source src="tomp3.cc - 21 Savage  redrum Official Music Video.mp4">
+				</video>
+			<hr style="width:100%;height:3px;background-color:purple">
+		<footer>
+			<div style="float:left">
+				<p><strong>autor:</strong>Youssef Benitez goncalves</p>
+			</div>
+			<div style="float:right">
+				<p><strong>16/01/2024</strong></p>
+			</div>
+		</footer>
+	</body>
+	<script>
+		$('#button').click(function(){
+		   if($('#feminino').is(':checked')){
+			 alert("Você escolheu feminino");
+		   }else if($('#masculino').is(':checked')){
+			 alert('Você escolheu masculino');
+		   }else{
+			 alert('Você não escolheu');
+		   }
+		 });
+	   </script>
+	   	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</html>
+
